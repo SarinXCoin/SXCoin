@@ -20,8 +20,8 @@ contract owned {
 interface tokenRecipient { function receiveApproval(address _from, uint256 _value, address _token, bytes _extraData) public; }
 
 contract CCXTokenERC20 {
-    string public constant _myTokeName = 'CryptoCoop Token';//change here
-    string public constant _mySymbol = 'CCX';//change here
+    string public constant _myTokeName = 'SarinX Coin X Token';//change here
+    string public constant _mySymbol = 'SXCX';//change here
     uint public constant _myinitialSupply = 100000;//leave it
     uint8 public constant _myDecimal = 18;//leave it
     // Public variables of the token
@@ -64,10 +64,10 @@ contract CCXTokenERC20 {
     function _transfer(address _from, address _to, uint _value) internal {
         // Prevent transfer to 0x0 address. Use burn() instead
         require(_to != 0x0);
-        // Check if the sender has enough
-        require(balanceOf[_from] >= _value);
+        // Check if the sender has enough                  // _from og _to er wallet adresser
+        require(balanceOf[_from] >= _value);               // Avsender (Wallet/Konto) av SXCX, sjekk at senderen har midler i sin wallet
         // Check for overflows
-        require(balanceOf[_to] + _value > balanceOf[_to]);
+        require(balanceOf[_to] + _value > balanceOf[_to]); // Mottaker (Wallet/Konto) av SXCX, sjekk at mottakeren har kapasitet til å ta imot
         // Save this for an assertion in the future
         uint previousBalances = balanceOf[_from] + balanceOf[_to];
         // Subtract from the sender
