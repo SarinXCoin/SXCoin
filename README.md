@@ -1,2 +1,2 @@
-# SXCoin
+# SXCoinX
 Developing of SarinXCoinX - SXCX
