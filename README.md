@@ -1,0 +1,2 @@
+# SXCoin
+Developing of SarinXCoin
