@@ -22,7 +22,7 @@ interface tokenRecipient { function receiveApproval(address _from, uint256 _valu
 contract CCXTokenERC20 {
     string public constant _myTokeName = 'SarinX Coin X Token';
     string public constant _mySymbol = 'SXCX';
-    uint public constant _myinitialSupply = 100000;
+    uint public constant _myinitialSupply = 10000000;
     uint8 public constant _myDecimal = 18;
     
     string public name;
