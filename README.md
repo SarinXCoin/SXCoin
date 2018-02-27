@@ -1,7 +1,7 @@
-# SXCoinX
-Developing of SarinXCoinX - SXCX
+# XTA
+Developing of XTA, (XecureTransAction)
 
-SXCX amount is 100,000,000 !
+XTA amount is 100,000,000 !
 
 Initial pre-Investor offer is: 1$ pr. token, it will be 2$ later.
 
