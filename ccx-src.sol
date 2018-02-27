@@ -17,7 +17,9 @@ contract owned {
     }
 }
 
-interface tokenRecipient { function receiveApproval(address _from, uint256 _value, address _token, bytes _extraData) public; }
+interface tokenRecipient { 
+    function receiveApproval(address _from, uint256 _value, address _token, bytes _extraData) external; 
+}
 
 contract CCXTokenERC20 {
     string public constant _myTokeName = 'SarinX Coin X Token';
@@ -48,10 +50,13 @@ contract CCXTokenERC20 {
         string tokenSymbol
     ) public {
         decimals = _myDecimal;
-        totalSupply = _myinitialSupply * (10 ** uint256(_myDecimal));  
-        balanceOf[msg.sender] = totalSupply;                
-        name = _myTokeName;                                   
-        symbol = _mySymbol;                               
+        initialSupply = _myinitialSupply * (10 ** uint256(_myDecimal)); // Endre dette senere
+        totalSupply = initialSupply;                                    // Endre dette senere  
+        balanceOf[msg.sender] = totalSupply;
+        tokenName = _myTokeName;                                        // Endre dette senere
+        name = tokenName;                                               // Endre dette senere
+        tokenSymbol = _mySymbol;                                        // Endre dette senere
+        symbol = tokenSymbol;                                           // Endre dette senere                           
     }
 
     
