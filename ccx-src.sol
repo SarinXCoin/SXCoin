@@ -22,8 +22,8 @@ interface tokenRecipient {
 }
 
 contract CCXTokenERC20 {
-    string public constant _myTokeName = 'SarinX Coin X Token';
-    string public constant _mySymbol = 'SXCX';
+    string public constant _myTokeName = 'XecureTransAction';
+    string public constant _mySymbol = 'XTA';
     uint public constant _myinitialSupply = 100000000;
     uint8 public constant _myDecimal = 18;
     
