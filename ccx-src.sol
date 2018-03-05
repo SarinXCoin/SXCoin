@@ -149,7 +149,7 @@ contract MyAdvancedToken is owned, XecureTransAction {
         uint256 initialSupply,
         string tokenName,
         string tokenSymbol
-    ) CCXTokenERC20(initialSupply, tokenName, tokenSymbol) public {}
+    ) XecureTransAction(initialSupply, tokenName, tokenSymbol) public {}
 
    
     function _transfer(address _from, address _to, uint _value) internal {
