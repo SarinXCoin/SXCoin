@@ -1,4 +1,4 @@
-pragma solidity 0.4.20;
+pragma solidity 0.4.16;
 
 contract owned {
     address public owner;
@@ -21,7 +21,7 @@ interface tokenRecipient {
     function receiveApproval(address _from, uint256 _value, address _token, bytes _extraData) external; 
 }
 
-contract CCXTokenERC20 {
+contract XecureTransAction {
     string public constant _myTokeName = 'XecureTransAction';
     string public constant _mySymbol = 'XTA';
     uint public constant _myinitialSupply = 100000000;
@@ -44,7 +44,7 @@ contract CCXTokenERC20 {
     event Burn(address indexed from, uint256 value);
 
     
-    function CCXTokenERC20(
+    function XecureTransAction(
         uint256 initialSupply,
         string tokenName,
         string tokenSymbol
@@ -132,7 +132,7 @@ contract CCXTokenERC20 {
 
 
 
-contract MyAdvancedToken is owned, CCXTokenERC20 {
+contract MyAdvancedToken is owned, XecureTransAction {
 
 
 
